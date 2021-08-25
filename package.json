@@ -1,0 +1,24 @@
+{
+  "name": "tetris",
+  "version": "1.0.0",
+  "description": "Tetris game for the Mintbean Hackathon",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibadra/tetris.git"
+  },
+  "author": "Ivon Badra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibadra/tetris/issues"
+  },
+  "homepage": "https://github.com/ibadra/tetris#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
