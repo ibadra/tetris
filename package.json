@@ -5,8 +5,13 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "start": "npm run lite",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "imagemin": "imagemin images/* -o dist/images",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "clean": "rimraf dist"
   },
   "repository": {
     "type": "git",
@@ -19,6 +24,11 @@
   },
   "homepage": "https://github.com/ibadra/tetris#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.2.0",
+    "lite-server": "^2.6.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
   }
 }
