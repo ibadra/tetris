@@ -1,0 +1,9 @@
+/* .marker {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+.game-board {
+  border: solid 2px;
+}
