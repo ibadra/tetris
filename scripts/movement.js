@@ -116,3 +116,21 @@ Piece.prototype.collision = function (x, y, piece) {
   }
   return false;
 };
+
+//LOCK A PIECE TO THE BOARD
+
+Piece.prototype.lock = function () {
+  for (r = 0; r < this.activeTetromino.length; r++) {
+    for (c = 0; c < this.activeTetromino.length; c++) {
+      if (!this.activeTetromino[r][c]) {
+        continue;
+      }
+      if (this.y + r < 0) {
+        gameOver = true;
+        alert("Game Over");
+        break;
+      }
+      board[this.y + r][this.x + c] = this.color;
+    }
+  }
+};
