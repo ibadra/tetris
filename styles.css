@@ -1,9 +1,8 @@
-/* .marker {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-
-.game-board {
+#board,
+#next {
   border: solid 2px;
+}
+
+.col {
+  border: solid 1px;
 }

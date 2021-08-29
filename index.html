@@ -23,19 +23,20 @@
     <button id="resetButton">Reset</button>
     <div class="container">
       <div class="row">
-        <div class="col-4">
-          <canvas
-            id="board"
-            class="game-board"
-            width="240"
-            height="400"
-          ></canvas>
+        <div class="col col-7 col-md-5 col-lg-4 col-xl-3">
+          <canvas id="board" width="250" height="500"></canvas>
         </div>
-        <div class="col-4 marker">
+        <div class="col col-3">
           <h4>Level <span id="level">1</span></h4>
           <p>Score: <span id="score">0</span></p>
           <p>Lines: <span id="score">0</span></p>
-          <canvas id="next" class="next"></canvas>
+          <canvas id="next" width="150" height="150"></canvas>
+          <div class="d-lg-none">
+            <a id="upArrow"><i class="fa fa-arrow-up"></i></a>
+            <a id="leftArrow"><i class="fa fa-arrow-left"></i></a>
+            <a id="rightArrow"><i class="fa fa-arrow-right"></i></a>
+            <a id="downArrow"><i class="fa fa-arrow-down"></i></a>
+          </div>
         </div>
       </div>
     </div>
